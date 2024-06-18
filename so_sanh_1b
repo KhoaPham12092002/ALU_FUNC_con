@@ -1,0 +1,9 @@
+module so_sanh_1b(
+    input logic   a, b,g,
+    output logic  bang,be,lon 
+    );
+      assign bang =!( a ^ b) & g  ;    // Bằng 
+      assign lon = a & !b & g     ;     // lớn 
+      assign be = !a & b & g      ;     // lớn 
+
+endmodule
